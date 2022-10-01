@@ -135,14 +135,17 @@
       {
         "projectileType" : "blastslingbomb-regular",
 		"powerProjectileType" : "blastslingbomb-regular",
+		"projectileCount" : 1,
 		"projectileParameters" : {
 		  "speed" : 50,
-		  "power" : 5.5
+		  "power" : 10.5 //5.5
 		}
       },
       {
         "projectileType" : "blastslingbomb-sticky",
 		"powerProjectileType" : "blastslingbomb-sticky",
+		"projectileCount" : 3,
+		"inaccuracy" : 0.06,
 		"projectileParameters" : {
 		  "speed" : 50,
 		  "power" : 4.0
@@ -151,8 +154,9 @@
       {
         "projectileType" : "blastslingbomb-vaash",
 		"powerProjectileType" : "blastslingbomb-vaash",
+		"projectileCount" : 1,
 		"projectileParameters" : {
-		  "speed" : 50,
+		  "speed" : 80, //50
 		  "power" : 4.5
 		}
       }

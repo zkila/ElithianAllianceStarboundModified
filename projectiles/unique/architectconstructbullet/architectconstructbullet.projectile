@@ -55,7 +55,7 @@
     }
   ],
   "power" : 5.0,
-  "speed" : 75,
+  "speed" : 75, //75
   "timeToLive" : 1.5,
   "damageType" : "NoDamage",
   "damageKind" : "default",

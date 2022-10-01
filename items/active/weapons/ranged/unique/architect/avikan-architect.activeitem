@@ -198,9 +198,9 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-doublelinerifle-altfire.lua"],
     "class" : "TheaDoubleLineRifleAltFire",
 
-    "chargeTime" : 1.0,
+    "chargeTime" : 0.5, //1.0
     "baseDamage" : 1.0,
-    "baseEnergyUsage" : 150,
+    "baseEnergyUsage" : 150, //150
     "inaccuracy" : 0.0,
 	
 	//Amount of values in table should be equal to projectileCount. This value adjusts the angles at which the projectiles are fired

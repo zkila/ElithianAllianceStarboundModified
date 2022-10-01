@@ -143,25 +143,84 @@
   },
 
   "altAbility" : {
-    "name" : "Greater Volley",
+    "name" : "Seeker Burst", // Greater Volley
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
     "class" : "TheaChargedShotAltFire",
 
     "chargeTime" : 1.2,
-    "baseDamage" : 16.0,
-    "baseEnergyUsage" : 75,
-    "inaccuracy" : 0.75,
+    "baseDamage" : 10.0,
+    "baseEnergyUsage" : 100, //75
+    "inaccuracy" : 0.2, //0.75
 	
 	"walkWhileFiring" : true,
 	
 	"cooldownTime" : 1.8,
 
     "projectileType" : "deathseekerbullet",
-	"projectileCount" : 16,
+	"projectileCount" : 4,
 	"projectileParameters" : {
       "knockback" : 20,
-	  "minSpeed" : 6,
-	  "maxSpeed" : 26
+	  "periodicActions" : [
+		{
+		  "time" : 0.05,
+		  "repeat" : true,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "animated",
+			"animation" : "/projectiles/unique/deathseekerbullet/trail.animation",
+			"position" : [-0.5, 0],
+			"initialVelocity" : [-2.5, 0.0],
+			"size" : 0.5,
+			"layer" : "back",
+			"collidesForeground" : false,
+			"timeToLive" : 0.5,
+			"destructionTime" : 0.1,
+			"destructionAction" : "fade",
+			"fullbright" : true,
+			"variance" : {
+			  "position" : [0.125, 0.125],
+			  "initialVelocity" : [0.125, 0.125],
+			  "size" : 0.25
+			}
+		  }
+		}
+	  ],
+	  "timeToLive" : 7.0, //17.0
+	  "piercing" : false,//false
+	  "randomTimeToLive" : true,
+	  "timeToLiveMilliseconds" : false,
+	  "minLifeTime" : 5,
+	  "maxLifeTime" : 10,
+	  
+	  "randomStartingSpeed" : true,
+	  "minSpeed" : 25,
+	  "maxSpeed" : 35,
+	 
+	  "randomWaveDirection" : false, 
+	  "randomWavePeriod" : true,
+	  "wavePeriod" : 0.5, //1.5
+	  "waveAmplitude" : 0.25, //1.75
+	  
+	  "homingStartDelay" : 0.8, //0.5
+	  "searchRadius" : 150,
+	  "baseHomingControlForce" : 3,
+	  
+	  "damageType" : "damage", //NoDamage
+	  
+	  "actionOnTimeout" : [{
+         "action" : "config",
+	     "file" : "/projectiles/explosions/deathseekerexplosion/deathseekerexplosion.config"
+	    }],
+	  "actionOnHit" : [{
+		 "action" : "config",
+	     "file" : "/projectiles/explosions/deathseekerexplosion/deathseekerexplosion.config"
+		}],
+      "actionOnReap" : [ ]
+	  /*"actionOnCollide" :[{
+		 "action" : "config",
+	     "file" : "/projectiles/explosions/deathseekerexplosion/deathseekerexplosion.config"
+		}]*/
     },
 
     "stances" : {

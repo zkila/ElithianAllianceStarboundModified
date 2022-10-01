@@ -12,8 +12,12 @@
   "fullbright" : true,
   "actionOnReap" : [
     {
-      "action" : "config",
-	  "file" : "/projectiles/explosions/primeinitiativeexplosion/skoffwreckerexplosion.config"
+      //"action" : "config",
+	  //"file" : "/projectiles/explosions/primeinitiativeexplosion/skoffwreckerexplosion.config"
+	  
+	  "action" : "projectile",
+      "type" : "nulldriveexplosionspawner",
+      "inheritDamageFactor" : 0.75 //0.55
     }
   ],
   "periodicActions" : [
@@ -24,11 +28,11 @@
       "rotate" : true,
       "specification" : {
 		"type" : "animated",
-		"animation" : "/projectiles/unique/skoffwreckerbullet/trail.animation",
+		"animation" : "/projectiles/unique/skoffwreckerbullet/trail1.animation",
         "position" : [-1.25, 0],
         "layer" : "back",
 		"collidesForeground" : false,
-        "timeToLive" : 2.0,
+        "timeToLive" : 2.0, //2.0
         "destructionTime" : 0.1,
         "destructionAction" : "fade",
         "fullbright" : true
@@ -39,9 +43,9 @@
       "repeat" : true,
       "action" : "projectile",
       "rotate" : true,
-      "type" : "skoffwreckertrail",
+      "type" : "skoffwreckertrail", //edited in the file
       "config" : {},
-      "inheritDamageFactor" : 0.075,
+      "inheritDamageFactor" : 0.175, //0.075
       "direction" : [0, -1],
       "offsetRange" : [0.0, 0.0, 0.0, 0.0]
     }

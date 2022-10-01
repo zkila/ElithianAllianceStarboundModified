@@ -55,7 +55,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
     "class" : "TheaAmmoFire",
 
-    "fireTime" : 0.48,
+    "fireTime" : 0.28, //0.48
     "baseDps" : 12.0,
     "inaccuracy" : 0.015,
 	

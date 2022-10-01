@@ -8,7 +8,7 @@
   "animation" : "architectconstruct.animation",
 
   //GENERAL SETTINGS
-  "timeToLive" : 4.8,
+  "timeToLive" : 9.6, //4.8
 
   //MOVEMENT CONTROLLER SETTINGS
   "movementSettings" : {

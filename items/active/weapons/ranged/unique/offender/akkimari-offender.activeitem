@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-offendericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;An old break-action Vaash gun once used to commit numerous crimes.",
+  "description" : "^orange;An old break-action Vaash gun once used Akris gunslingers.",
   "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "^orange;Offender^white;",
   "level" : 6,
@@ -70,16 +70,18 @@
 
     "fireTime" : 0.32,
     "baseDps" : 12.0,
-    "inaccuracy" : 0.03,
+    "inaccuracy" : 0.01, //0.03
 	
 	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
-	"maxAmmo" : 6,
+	"maxAmmo" : 1,
 	"cycleAfterShot" : false,
 	"fireAnimation" : true,
 
     "projectileCount" : 1,
-    "fireType" : "auto",
+    "fireType" : "burst",
+	"burstCount" : 3,
+	"burstTime": 0.1,
 
     "projectileType" : "akkimarivaashbullet",
     "projectileParameters" : {
@@ -97,11 +99,11 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 15,
+        "armRotation" : 2, //5
+        "weaponRotation" : 8, //15
         "twoHanded" : false,
 
-        "allowRotate" : false,
+        "allowRotate" : true, //false
         "allowFlip" : true
       },
       "cooldown" : {

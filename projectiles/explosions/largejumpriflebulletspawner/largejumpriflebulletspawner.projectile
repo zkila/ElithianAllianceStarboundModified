@@ -1,0 +1,213 @@
+{
+  "projectileName" : "largejumpriflebulletspawner",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "largejumpriflebulletspawner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "timeToLive": 0.01,
+  "power" : 0,
+  "speed" : 0,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "largejumpriflebullet",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {   
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+	  }
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {   
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {   
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {   
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebris",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"minSpeed" : 60,
+		"maxSpeed" : 80,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    }/*,
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"speed" : 35,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"speed" : 37,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"speed" : 40,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"speed" : 30,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0,
+	  "config" : {  
+		"speed" : 45,
+		"minLifeTime" : 400,
+		"maxLifeTime" : 500
+		}
+    }*/
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

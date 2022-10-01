@@ -74,8 +74,8 @@
 	"transitionFrames" : 7,
 	
     "minFiringSpeed" : 0.35, //Starting fire time
-	"maxFiringSpeed" : 0.10, //End fire time
-	"maxFiringTime" : 3.5, //How long it takes to reach maximum firing speed
+	"maxFiringSpeed" : 0.05, //0.10...End fire time
+	"maxFiringTime" : 7.0, //3.5...How long it takes to reach maximum firing speed
 	
     "baseDps" : 3.5, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
     "energyUsage" : 15.0,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-vengeanceicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;An old Vaash rifle that has avenged many lives.",
+  "description" : "^orange;An old Vaash rifle that has taken many lives with vengeance.",
   "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "^orange;Vengeance^white;",
   "level" : 6,
@@ -63,7 +63,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
     "class" : "TheaAmmoFire",
 
-    "fireTime" : 0.7,
+    "fireTime" : 0.5, //0.7
     "baseDps" : 12.5,
     "inaccuracy" : 0.0,
 	
@@ -78,7 +78,8 @@
 
     "projectileType" : "akkimarivaashbullet",
     "projectileParameters" : {
-      "knockback" : 12
+      "knockback" : 12,
+	  "speed" : 350
     },
 	
     "stances" : {
@@ -96,7 +97,7 @@
       "fire" : {
         "duration" : 0,
         "armRotation" : 5,
-        "weaponRotation" : 20,
+        "weaponRotation" : 10, //20
         "twoHanded" : true,
 
         "allowRotate" : false,

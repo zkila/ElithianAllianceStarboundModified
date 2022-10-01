@@ -70,8 +70,8 @@
     "projectileType" : "voidgravitybullet",
     "projectileParameters" : { 
       "knockback" : 6,
-      "searchRadius" : 20,
-      "baseHomingControlForce" : 1.0
+      "searchRadius" : 60, //20
+      "baseHomingControlForce" : 2.5 //1.0
     },
 	
 	"stances" : {
@@ -120,9 +120,9 @@
 	"projectileCount" : 1,
     "fireType" : "auto",
 	
-	"projectileType" : "voidgravitybomb",
+	"projectileType" : "voidgravitybomb", 
 	"projectileParameters" : {
-	  "knockback" : 0
+	  "knockback" : 0 
 	},
 	
 	"hidePrimaryMuzzleFlash" : false,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-conscriptoricon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;An intimidating revolver once held by the elder of Vathra.",
+  "description" : "^orange;An intimidating shotgun-revolver hybrid once held by the elder of Vathra.",
   "manufacturer" : "^gray;Vathra^reset;",
   "shortdescription" : "^orange;Conscriptor^white;",
   "level" : 6,
@@ -66,16 +66,16 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
     "class" : "TheaAmmoFire",
 
-    "fireTime" : 0.78,
+    "fireTime" : 0.68, //0.78
     "baseDps" : 13.5,
-    "inaccuracy" : 0.005,
+    "inaccuracy" : 0.05, //0.005
 	
 	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
 	"maxAmmo" : 4,
 	"cycleAfterShot" : true,
 
-    "projectileCount" : 1,
+    "projectileCount" : 3,
     "fireType" : "auto",
 
     "projectileType" : "conscriptorbullet",

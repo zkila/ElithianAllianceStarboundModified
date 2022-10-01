@@ -1,7 +1,7 @@
 {
   "itemName" : "trink-shockbolter",
   "price" : 1500,
-  "inventoryIcon" : "trink-shockboltericon.png",
+  "inventoryIcon" : "trink-shockboltericon1.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A reverse-engineered Thelean design built to shock foes.",
@@ -23,9 +23,9 @@
 
   "animation" : "/items/active/weapons/ranged/animations/thea-gun-animated.animation",
   "animationParts" : {
-    "middle" : "trink-shockbolter.png",
-    "middleFullbright" : "trink-shockbolterlights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle.png"
+    "middle" : "trink-shockbolter1.png",
+    "middleFullbright" : "trink-shockbolterlights1.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle1.png"
   },
   "animationCustom" : {
 	"stateTypes" : {
@@ -72,7 +72,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-lightningfire.lua"],
     "class" : "TheaLightningFire",
 
-    "fireTime" : 0.2,
+    "fireTime" : 0.8, //0.2
     "baseDps" : 10.5,
     "energyUsage" : 35.0,
 
@@ -82,18 +82,18 @@
       "knockback" : 1
     },
 
-    "lightningDistanceGround" : 7.5,
-	"lightningDistanceEnemies" : 20.0,
+    "lightningDistanceGround" : 20.0, //7.5
+	"lightningDistanceEnemies" : 50.0, //20.0
 	
 	//Relative to muzzleOffset. If the beam doesn't collide with anything, lightning should target this position instead
 	"lightningTargetOffset" : [2, -0.5],
 	
 	//Lightning config
 	"lightningAmount" : 1,
-	"lightningWidth" : 1.15,
-	"lightningForks" : 0,
-	"lightningBranchingAmount" : 0.10,
-	"lightningColour" : [171, 205, 252, 200],
+	"lightningWidth" : 1.15, 
+	"lightningForks" : 0, //0
+	"lightningBranchingAmount" : 0.25, //0.10
+	"lightningColour" : [153,0,0,255],//[171, 205, 252, 200],
 
     "stances" : {
       "idle" : {

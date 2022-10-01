@@ -1,9 +1,11 @@
 {
   "projectileName" : "voiceofrhadeisbullet-xanafian",
+  "image" : "voiceofrhadeisbullet-xanafian.png",
   "physics" : "lineriflebullet",
   "bounces" : 0,
   "damageKindImage" : "icon.png",
-  "image" : "voiceofrhadeisbullet-xanafian.png",
+  "piercing" : false,
+  "flippable" : true,
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
@@ -40,5 +42,9 @@
   "fullbright" : true,
   "damageKind" : "xanafian",
   
-  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+  //"scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+  "scripts" : [ "/projectiles/scripts/thea-lineriflehoming.lua" ],
+  "searchRadius" : 40,
+  "baseHomingControlForce" : 2.5,
+  "homingStartDelay" : 0.125
 }

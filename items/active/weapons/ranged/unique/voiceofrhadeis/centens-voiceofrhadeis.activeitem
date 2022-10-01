@@ -111,34 +111,64 @@
 	//The adapted ability will be overwritten using these values, based on the current ammo index
     "ammoTypes" : [
       {
-        "projectileType" : "voiceofrhadeisbullet-xanafian",
+        "projectileType" : "voiceofrhadeisbullet-xanafian", //edited in the projectile file
 		"fireTime" : 0.45,
         "energyUsage" : 36,
-		"inaccuracy" : 0.005
+		"inaccuracy" : 0.005,
+		"baseDps" : 10.5,
+		"projectileCount" : 1,
+		"projectileParameters" :{
+			"knockback" : 6,
+			"speed" : 105
+		}
       },
       {
         "projectileType" : "voiceofrhadeisbullet-fire",
 		"fireTime" : 0.32,
         "energyUsage" : 42,
-		"inaccuracy" : 0.015
+		"inaccuracy" : 0.015,
+		"baseDps" : 10.5,
+		"projectileCount" : 1,
+		"projectileParameters" :{
+			"knockback" : 6,
+			"speed" : 105
+		}
       },
       {
         "projectileType" : "voiceofrhadeisbullet-ice",
-		"fireTime" : 0.38,
-        "energyUsage" : 28.0,
-		"inaccuracy" : 0.010
+		"fireTime" : 0.60, 				//0.38
+        "energyUsage" : 40.0, 			//28.0
+		"inaccuracy" : 0.0, 			//0.010
+		"baseDps" : 20.5, 				//10.5
+		"projectileCount" : 1,
+		"projectileParameters" :{
+			"knockback" : 0, 			//6
+			"speed" : 210 				//105
+		}
       },
       {
         "projectileType" : "voiceofrhadeisbullet-electric",
-		"fireTime" : 0.12,
-        "energyUsage" : 42,
-		"inaccuracy" : 0.035
+		"fireTime" : 0.06,				//0.12
+        "energyUsage" : 22,				//42
+		"inaccuracy" : 0.035,			//0.035
+		"baseDps" : 12.5,				//10.5
+		"projectileCount" : 1,
+		"projectileParameters" :{
+			"knockback" : 3,			//6
+			"speed" : 105				//105
+		}
       },
       {
-        "projectileType" : "voiceofrhadeisbullet-poison",
-		"fireTime" : 0.20,
-        "energyUsage" : 36,
-		"inaccuracy" : 0.025
+        "projectileType" : "voiceofrhadeisbullet-poison", 
+		"fireTime" : 0.60,				//0.20
+        "energyUsage" : 66,				//36
+		"inaccuracy" : 0.065,			//0.025
+		"baseDps" : 15.5,
+		"projectileCount" : 5,			//1
+		"projectileParameters" :{
+			"knockback" : 6,
+			"speed" : 105
+		}
       }
     ],
 

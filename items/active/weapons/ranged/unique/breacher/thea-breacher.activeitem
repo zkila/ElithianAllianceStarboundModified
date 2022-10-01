@@ -4,8 +4,7 @@
   "inventoryIcon" : "thea-breachericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A high-power railgun capable of firing through solid walls.",
-  "manufacturer" : "^gray;The Rim^reset;",
+  "description" : "^orange;A high-power railgun capable of firing through solid walls.", 		"manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "^orange;Breacher K-1^white;",
   "level" : 6,
   "fixedLevel" : false,
@@ -28,6 +27,7 @@
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle.png",
     "charge" : "thea-breachercharge.png",
     "chargeFullbright" : "thea-breacherchargelights.png"
+	//"chargeAlt" : "thea-breachercharge.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -56,7 +56,13 @@
 		    "offset" : [1.375, -0.875]
 		  }
 		}
-      }
+	/*	"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.375, -0.875]
+		  }
+		}*/
+	  }
     },
     "particleEmitters" : {
       "muzzleFlash" : {
@@ -69,10 +75,14 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/breacher_fire.ogg" ],
+	//  "fireAlt" : [ "/sfx/gun/breacher_fire.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/breacher_charge.ogg" ],
+	//  "chargeLoopAlt" : [ "/sfx/gun/breacher_charge.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+	//  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
+
 
   "baseOffset" : [1.375, -0.875],
   "muzzleOffset" : [2.625, 0.0],
@@ -88,7 +98,7 @@
 	"activeAnimation" : true, //Allows a special animation to be played while firing
 
     "chargeTime" : 3.2,
-    "baseDamage" : 27.5,
+    "baseDamage" : 45.5, // 27.5
     "baseEnergyUsage" : 500,
     "inaccuracy" : 0.0,
 	
@@ -99,7 +109,36 @@
     "projectileType" : "alliancerailgunbullet",
 	"projectileCount" : 1,
 	"projectileParameters" : {
-      "knockback" : 40
+      "knockback" : 40,
+	   "speed" : 360, //180
+	   
+	   "periodicActions" : [
+		{
+		  "time" : 0.01, // 0.01
+		  "repeat" : true,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "textured",
+			"image" : "/projectiles/alliance/alliancerailgunbullet/trail1.png",
+			"position" : [-1.5, 0],
+			"layer" : "front",
+			"timeToLive" : 0.1,
+			"destructionTime" : 0.6,
+			"destructionAction" : "fade",
+			"fullbright" : true
+		  }
+		}
+	  ],
+  
+	  //Wall Buster Config
+	  "wallPenetrations" : 5,			//How many penetrations can happen. If set to 1, the projectile will only penetrate a single wall
+	  "maxPenetrationDistance" : 15,	//Maximum penetration distance. Non-persistent, value is reset with every new entry point
+	  
+	  "damageTiles" : true,			//Whether or not to damage the tiles the projectile travels through
+	  "damageTileRadius" : 1.0,	// 0.75 ... Radius around the projectile to damage tiles in
+	  "tileDamage" : 1000,			//Amount of damage to apply to tiles per tick
+	  "harvestLevel" : 0			//Harvest level for tile damage. Determines if destroyed materials should drop items
     },
 	
 	"recoilKnockbackVelocity" : 55,
@@ -169,6 +208,125 @@
       }
 	}
   },
+ /* 
+  "altAbility" : {
+    "name" : "Rubber Slug", 
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+ 	
+	"activeAnimation" : true, //Allows a special animation to be played while firing
 
+    "chargeTime" : 3.2,
+    "baseDamage" : 75.5, // 27.5
+    "baseEnergyUsage" : 500,
+    "inaccuracy" : 0.0,
+	
+	"walkWhileFiring" : true,
+	
+	"cooldownTime" : 2.0,
+
+    "projectileType" : "alliancerailgunbullet",
+	"projectileCount" : 1,   
+	"projectileParameters" : {
+       "knockback" : 80,
+	   "speed" : 180, //180
+	   "bounces" : -1,
+	   "periodicActions" : [
+		{
+		  "time" : 0.01, // 0.01
+		  "repeat" : true,
+		  "action" : "particle",
+		  "rotate" : true,
+		  "specification" : {
+			"type" : "textured",
+			"image" : "/projectiles/alliance/alliancerailgunbullet/trail.png",
+			"position" : [-1.5, 0],
+			"layer" : "front",
+			"timeToLive" : 0.1,
+			"destructionTime" : 0.6,
+			"destructionAction" : "fade",
+			"fullbright" : true
+		  }
+		}
+	  ],
+  
+	  //Wall Buster Config
+	  "wallPenetrations" : 0,			//How many penetrations can happen. If set to 1, the projectile will only penetrate a single wall
+	  "maxPenetrationDistance" : 0,	//Maximum penetration distance. Non-persistent, value is reset with every new entry point
+	  
+	  "damageTiles" : true,			//Whether or not to damage the tiles the projectile travels through
+	  "damageTileRadius" : 1.5,	// 0.75 ... Radius around the projectile to damage tiles in
+	  "tileDamage" : 1000,			//Amount of damage to apply to tiles per tick
+	  "harvestLevel" : 0			//Harvest level for tile damage. Determines if destroyed materials should drop items
+    },
+	
+	"recoilKnockbackVelocity" : 35,
+	"crouchRecoilKnockbackVelocity" : 10,
+	"crouchStopsRecoil" : true,
+	
+	"stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.8,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+	}
+  },
+ */ 
   "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
 }

@@ -54,7 +54,7 @@
     "scripts" : ["/items/active/weapons/melee/abilities/baton/thea-batonwhack.lua"],
 	"class" : "BatonWhack",
 	
-    "fireTime" : 0.85,
+    "fireTime" : 0.75, //0.85
 	
     "baseDps" : 10.0,
     "activeDps" : 11.5,
@@ -70,7 +70,7 @@
       "damageSourceKind" : "electrichammer",
       "statusEffects" : [ "electrified" ],
       "knockbackMode" : "aim",
-      "knockback" : 45,
+      "knockback" : 55, //45
       "timeoutGroup" : "primary"
     },
 	
@@ -129,7 +129,7 @@
     "rechargeTime" : 4.5,
 
     "chargeTime" : 1.25,
-    "minChargeTime" : 1.0,
+    "minChargeTime" : 0.75, //1.0
 	
 	"dischargeEnergyCost" : 500,
 	
@@ -140,7 +140,7 @@
 	
 	"projectileOffset" : [0, 2.0],
 
-    "projectileType" : "electricstunexplosionspawner",
+    "projectileType" : "electricstunexplosionspawner", //edited in the projectile file
     "projectileParameters" : {
       "power" : 0.0,
       "knockbackMode" : "facing"

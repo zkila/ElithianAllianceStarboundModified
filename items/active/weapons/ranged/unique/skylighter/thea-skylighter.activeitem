@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-skylightericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A classic revolver-style sidearm using a conventional magazine.",
+  "description" : "^orange;A modified revolver-style sidearm using heavier ammo.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "^orange;Skylighter^white;",
   "level" : 6,
@@ -57,21 +57,22 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
     "class" : "TheaAmmoFire",
 
-    "fireTime" : 0.28,
-    "baseDps" : 13.0,
+    "fireTime" : 0.48, //0.28
+    "baseDps" : 15.0, //13.0
     "inaccuracy" : 0.015,
 	
 	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
-	"maxAmmo" : 12,
+	"maxAmmo" : 3, //12
 	"cycleAfterShot" : true,
 
     "projectileCount" : 1,
     "fireType" : "auto",
-
-    "projectileType" : "allianceenergybullet",
+	
+    "projectileType" : "allianceenergybullet-large",
     "projectileParameters" : {
-      "knockback" : 6
+      "knockback" : 17,
+	  "speed" : 250
     },
 	
     "stances" : {

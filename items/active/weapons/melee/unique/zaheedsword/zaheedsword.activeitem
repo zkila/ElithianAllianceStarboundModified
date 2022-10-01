@@ -46,7 +46,7 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 10.5,
+    "baseDps" : 15.5, //10.5
 	
 	"stepDamageConfig" : [
       {
@@ -258,13 +258,13 @@
     "scripts" : ["/items/active/weapons/melee/abilities/broadsword/thea-zaheedthrow/thea-zaheedthrow.lua"],
 	"class" : "TheaZaheedThrow",
 
-    "walkWhileFiring" : true,
+    "walkWhileFiring" : false, //true
 
     "fireOffset" : [0.0, 0.0],
 	
 	"teleportOffset" : [0.0, 0.5],
-	"teleportTolerance" : 3.0,
-	"maxTeleportDistance" : 100.0,
+	"teleportTolerance" : 3.0,			//3.0
+	"maxTeleportDistance" : 100.0,		//100.0
 
     "energyPerShot" : 200,
 
@@ -274,25 +274,41 @@
 
     "projectileType" : "zaheedsword",
     "projectileParameters" : {
-      "speed" : 75,
-      "power" : 8
+      "speed" : 150, //75
+      "power" : 10 //8
     },
 
     "stances" : {
-	  "windup" : {
+	  "windup" : 
+	  { 
+		"armRotation":-20, 
+		"weaponRotation":120,  
+		"allowRotate":false, 
+		"allowFlip":true,
+		"twoHanded":false
+	  },
+	  /*{
         "armRotation" : 50,
         "weaponRotation" : -230,
         "allowRotate" : false,
         "allowFlip" : true,
         "twoHanded" : true
-      },
-      "aiming" : {
+      },*/
+      "aiming" : 
+	  { 
+		"armRotation":-20, 
+		"weaponRotation":120,  
+		"allowRotate": true, 
+		"allowFlip":true,
+		"twoHanded":false
+	  },
+	  /*{
         "armRotation" : 110,
         "weaponRotation" : -10,
         "allowRotate" : false,
         "allowFlip" : true,
         "twoHanded" : false
-      },
+      },*/
       "fire" : {
         "duration" : 0.3,
         "armRotation" : 30,

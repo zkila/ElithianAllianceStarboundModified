@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-skoffwreckersbowicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A monstrous linerifle capable of downing ships in flight.",
+  "description" : "^orange;A monstrous linerifle capable of downing ships in flight with a single shot.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Skoffwrecker's Bow^white;",
   "level" : 6,
@@ -92,8 +92,8 @@
     "class" : "TheaDoubleLineRifle",
 
     "chargeTime" : 2.0,
-    "baseDamage" : 18.5,
-    "baseEnergyUsage" : 100,
+    "baseDamage" : 18.5, //18.5
+    "baseEnergyUsage" : 200,
     "inaccuracy" : 0.0,
 	
 	"cooldownTime" : 1.2,
@@ -109,11 +109,17 @@
       [1, 1.17, 0, 0.85, [255, 122, 0, 200], [-2.125, 0.0], [0.0, 0.375]],
       [1, 1.18, 0, 1.20, [255, 190, 0, 255], [-2.125, 0.0], [0.0, 0.375]]
     ],
-	"lightningChargeLevels2" : [
-      [1, 1.15, 0, 0.20, [255, 106, 0, 100], [-2.125, 0.0], [0.0, -0.125]],
-      [1, 1.16, 0, 0.50, [255, 112, 0, 150], [-2.125, 0.0], [0.0, -0.125]],
-      [1, 1.17, 0, 0.85, [255, 122, 0, 200], [-2.125, 0.0], [0.0, -0.125]],
-      [1, 1.18, 0, 1.20, [255, 190, 0, 255], [-2.125, 0.0], [0.0, -0.125]]
+	/*"lightningChargeLevels" : [
+      [1, 1.15, 0, 0.20, [255, 106, 0, 100], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.16, 0, 0.50, [255, 112, 0, 150], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.17, 0, 0.85, [255, 122, 0, 200], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.18, 0, 1.20, [255, 190, 0, 255], [-2.125, 0.0], [0.0, 0.375]]
+    ],*/
+	"lightningChargeLevels2" : [ 		//same as the first one
+      [1, 1.15, 0, 0.20, [255, 106, 0, 100], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.16, 0, 0.50, [255, 112, 0, 150], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.17, 0, 0.85, [255, 122, 0, 200], [-2.125, 0.0], [0.0, 0.375]],
+      [1, 1.18, 0, 1.20, [255, 190, 0, 255], [-2.125, 0.0], [0.0, 0.375]]
     ],
 	//Amount: amount of lightning bolts to draw
 	//Width: Width of the bolts
@@ -123,10 +129,11 @@
 	//Start Offset: Offset for the lightning origin position, relative to muzzleOffset
 	//End Offset: Offset for the lightning target position, relative to muzzleOffset
 
-    "projectileType" : "skoffwreckerbullet",
+    "projectileType" : "skoffwreckerbullet", //edited heavily in the file
 	"projectileCount" : 1,
 	"projectileParameters" : {
-      "knockback" : 10
+      "knockback" : 10,
+	  "speed" : 300
     },
 	
 	//CHARGE PARTICLE CONFIGURATION

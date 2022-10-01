@@ -28,10 +28,10 @@
   "physicsForces" : {
     "vacuum" : {
       "type" : "RadialForceRegion",
-      "outerRadius" : 30,
-      "innerRadius" : 5,
-      "targetRadialVelocity" : -35,
-      "controlForce" : 400,
+      "outerRadius" : 30, //30
+      "innerRadius" : 5, //5
+      "targetRadialVelocity" : -35, //-35
+      "controlForce" : 400, //400
       "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop", "projectile"]
     }
   },

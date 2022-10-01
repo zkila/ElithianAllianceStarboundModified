@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-branditzericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A minimalistic railgun firing dual overheated slugs.",
+  "description" : "^orange;A minimalistic railgun firing a single overheated slug.",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "^orange;Branditzer Type-1^reset;",
   "level" : 6,
@@ -82,7 +82,7 @@
 
     "chargeTime" : 0.5,
     "baseDamage" : 8.0,
-    "inaccuracy" : 0.005,
+    "inaccuracy" : 0.0, //0.005
 	
 	"cooldownTime" : 0.4,
 	
@@ -90,9 +90,12 @@
 	"maxAmmo" : 5,
 
     "projectileType" : "alliancebranditzerbullet",
-	"projectileCount" : 2,
+	"projectileCount" : 1,	//2
 	"projectileParameters" : {
-      "knockback" : 10
+      "knockback" : 10,
+	  "minSpeed" : 250,
+	  "maxSpeed" : 350,
+	  "speed" : 300
     },
 	
 	"singleFireAnimation" : true, //Makes the weapon fire a non-looping active animation after every shot

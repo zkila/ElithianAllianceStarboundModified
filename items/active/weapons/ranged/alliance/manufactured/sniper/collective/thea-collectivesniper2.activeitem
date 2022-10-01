@@ -4,15 +4,18 @@
   "inventoryIcon" : "thea-collectivesniper2.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "^gray;A high-impact sniper rifle.^reset;",
+  "description" : "^gray;A modular sniper rifle.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.R-16 Stargazer",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-descriptive-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,
+  
+   //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_sniper1",
   
   "cursor" : "/cursors/thea-precisereticle.cursor",
   
@@ -102,7 +105,5 @@
     }
   },
 
-  "altAbilityType" : "thea-chargedshot",
-
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

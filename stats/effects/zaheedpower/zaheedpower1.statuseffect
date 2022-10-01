@@ -1,0 +1,16 @@
+{
+  "name" : "zaheedpower1",
+  "effectConfig" : {
+    "powerModifier" : 3.0 //2.0
+  },
+  "defaultDuration" : 3.75, //0.75
+
+  "scripts" : [
+    "zaheedpower.lua"
+  ],
+
+  "animationConfig" : "zaheedpower.animation",
+
+  "label" : "Empowered",
+  "icon" : "/interface/statuses/zaheedpower1.png"
+}

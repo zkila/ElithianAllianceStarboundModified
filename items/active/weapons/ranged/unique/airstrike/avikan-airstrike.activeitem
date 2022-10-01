@@ -202,12 +202,36 @@
 		"delay" : 2.0
 	  },
 	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.05
+	  },
+	  {
 		"projectileType" : "avikanairstrikerocket",
 		"projectileParameters" : {},
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
 		"inaccuracy" : 0.1,
-		"delay" : 2.125
+		"delay" : 2.1
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.15
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.2
 	  },
 	  {
 		"projectileType" : "avikanairstrikerocket",
@@ -218,15 +242,39 @@
 		"delay" : 2.25
 	  },
 	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.3
+	  },
+	  {
 		"projectileType" : "avikanairstrikerocket2",
 		"projectileParameters" : {},
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
 		"inaccuracy" : 0.1,
-		"delay" : 2.375
+		"delay" : 2.35
 	  },
 	  {
 		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.4
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.45
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
 		"projectileParameters" : {},
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
@@ -239,7 +287,7 @@
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
 		"inaccuracy" : 0.1,
-		"delay" : 2.625
+		"delay" : 2.55
 	  },
 	  {
 		"projectileType" : "avikanairstrikerocket2",
@@ -247,7 +295,7 @@
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
 		"inaccuracy" : 0.1,
-		"delay" : 2.75
+		"delay" : 2.6
 	  },
 	  {
 		"projectileType" : "avikanairstrikerocket",
@@ -255,7 +303,95 @@
 		"heightRange" : [40, 50],
 		"widthRange" : [-10, 10],
 		"inaccuracy" : 0.1,
-		"delay" : 2.875
+		"delay" : 2.65
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.7
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.75
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.8
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.85
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.9
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 3.0
 	  }
 	],
 
@@ -315,13 +451,13 @@
     "baseDamage" : 25.0,
     "baseEnergyUsage" : 500,
 	
-	"cooldownTime" : 1.5,
+	"cooldownTime" : 5.0, //1.5
 	
 	"walkWhileFiring" : false,
 	
 	"maxLaserDistance" : 100,
 	"laserColourTargeting" : [255, 0, 0, 200],	//Laser colour while charging
-	"laserColourReady" : [0, 255, 0, 200],		//Laser colour when ready
+	"laserColourReady" : [255, 190, 0, 255],		//Laser colour when ready
 	"laserColourInactive" : [0, 0, 0, 0],		//Laser colour when not in use
 	"laserReadyTime" : 0.1,						//Laser colour is changed to "ready" this amount of time before firing
 
@@ -334,6 +470,22 @@
 		"widthRange" : [0, 0],
 		"inaccuracy" : 0.0,
 		"delay" : 1.0
+	  },
+	  {
+		"projectileType" : "avikanbunkerbuster",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-5, 5],
+		"inaccuracy" : 0.0,
+		"delay" : 2.0
+	  },
+	  {
+		"projectileType" : "avikanbunkerbuster",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-5, 5],
+		"inaccuracy" : 0.0,
+		"delay" : 3.0
 	  }
 	],
 

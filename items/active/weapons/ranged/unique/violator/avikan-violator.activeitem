@@ -79,10 +79,14 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
     "class" : "TheaChargedShot",
 
-    "chargeTime" : 1.5,
+    "chargeTime" : 1.5, //1.5
     "baseDamage" : 15.0,
-    "baseEnergyUsage" : 85,
-    "inaccuracy" : 0.0,
+    "baseEnergyUsage" : 150, //85
+    "inaccuracy" : 0.04, //0.0
+	
+	"fireType" : "burst",
+	"burstCount" : 2,
+	"burstTime": 0.15, //0.2
 	
 	"walkWhileFiring" : true,
 	
@@ -148,7 +152,7 @@
 
 	//Charge Config
 	"chargeTime" : 0.8,
-	"cooldownTime" : 0.6,
+	"cooldownTime" : 1.6, //0.6
 	
 	//Beam Config
     "fireTime" : 0.15,
@@ -165,7 +169,7 @@
 	"spawnImpactProjectile" : false,
 	"impactProjectile" : "",
 	
-	"laserPiercing" : false,
+	"laserPiercing" : true, //false
 
     "damageConfig" : {
       "statusEffects" : [ ],
@@ -183,9 +187,9 @@
       "overdrawLength" : 0.2,
       "taper" : 0,
       "waveform" : {
-        "frequency" : 1.0,
-        "amplitude" : 0.075,
-        "movement" : 40.0
+        "frequency" : 1.0, //1.0
+        "amplitude" : 0.075, //0.075
+        "movement" : 40.0 //40.0
       },
       "fullbright" : true,
 	  "renderLayer" : "Player+1"

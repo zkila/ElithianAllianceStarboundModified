@@ -28,7 +28,7 @@
   ],
   "periodicActions" : [
 	{
-      "time" : 1.25,
+      "time" : 1.25, //1.25
       "repeat" : true,
       "action" : "projectile",
       "type" : "wrathofrhadeisseeker",
@@ -40,7 +40,7 @@
       "time" : 0.4,
       "repeat" : true,
       "action" : "projectile",
-      "type" : "aspectofcreationtendril",
+      "type" : /*"aspectofcreationarrow",*/ "aspectofcreationtendril", 
       "inheritDamageFactor" : 0.15,
 	  "fuzzAngle" : 360,
       "angleAdjust" : 0
@@ -52,10 +52,10 @@
   "physicsForces" : {
     "vacuum" : {
       "type" : "RadialForceRegion",
-      "outerRadius" : 10,
-      "innerRadius" : 2,
-      "targetRadialVelocity" : 35,
-      "controlForce" : 400,
+      "outerRadius" : 10, //10
+      "innerRadius" : 2, //2
+      "targetRadialVelocity" : 35, //35
+      "controlForce" : 400, //400
       "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop"]
     }
   },

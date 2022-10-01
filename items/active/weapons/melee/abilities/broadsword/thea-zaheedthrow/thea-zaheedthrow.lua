@@ -104,7 +104,7 @@ function TheaZaheedThrow:attemptTeleport()
 		status.addEphemeralEffect("invulnerable", 0.5)
 		
 		--Increase the player's power 
-		status.addEphemeralEffect("zaheedpower")
+		status.addEphemeralEffect("zaheedpower1") --zaheedpower
 		
 		--Reset player momentum, prevents fall damage
 		mcontroller.setXVelocity(0,0)

@@ -1,9 +1,9 @@
 {
   "name" : "zaheedpower",
   "effectConfig" : {
-    "powerModifier" : 2.0
+    "powerModifier" : 2.0 //2.0
   },
-  "defaultDuration" : 0.75,
+  "defaultDuration" : 0.75, //0.75
 
   "scripts" : [
     "zaheedpower.lua"

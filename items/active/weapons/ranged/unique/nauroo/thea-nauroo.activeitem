@@ -115,7 +115,10 @@
     "fireType" : "auto",
 
     "projectileType" : "nauroorocket3",
-    "projectileParameters" : {},
+    "projectileParameters" : {
+		"speed" : 30,
+		"acceleration" : 150
+	},
     "stances" : {
       "idle" : {
         "armRotation" : 0,

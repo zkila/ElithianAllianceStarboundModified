@@ -2,16 +2,22 @@
   "itemName" : "zaheedswordback",
   "price" : 1000,
   "inventoryIcon" : "icons.png:back",
-  "rarity" : "Rare",
+  "rarity" : "Legendary",
   "category" : "backwear",
-  "description" : "^green;Avikan. ^white;Zaheed wears his sword on his back when not in use.",
+  "description" : "^green;Avikan. ^white;Zaheed wears his sword on his back when not in use, giving a damage buff instead.",
   "shortdescription" : "Zaheed's Sword",
-  "tooltipKind" : "back",
+  "tooltipKind" : "baseaugment",
 
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
   "maxStack" : 1,
-
+  
+  "statusEffects" : [
+	"zaheedpower"
+  ],
+  
+  "acceptsAugmentType" : "back",
+  
   "colorOptions" : [
   
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK

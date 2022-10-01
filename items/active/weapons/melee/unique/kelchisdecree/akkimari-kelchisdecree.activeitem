@@ -240,13 +240,13 @@
 	"wallDetectOffset" : [1.5, -1], //Offset for wall detection when checking for a wall to stick to. Prevents sticking from activating on ceilings and such
 	
 	"vaultEnergy" : 50,
-	"dashEnergy" : 25,
+	"dashEnergy" : 50,				//25
 	
-	"vaultingVelocity" : 45,
+	"vaultingVelocity" : 50, 		//45
 	
-	"maxDashes" : 2,
-	"dashVelocity" : 40,
-	"retainVelocityFactor" : 0.6,
+	"maxDashes" : 2, 				//2
+	"dashVelocity" : 60,			//40
+	"retainVelocityFactor" : 0.8, 	//0.6
 	"restoreDashesOnHit" : true,
 	"restoreDashesOnSwim" : true,
 	"restoreDashesInSpace" : true,

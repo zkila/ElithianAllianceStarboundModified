@@ -53,10 +53,10 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
     "class" : "MultiBarrelShot",
 
-    "fireTime" : 0.42,
+    "fireTime" : 0.14, //0.42
     "baseDps" : 11.0,
     "energyUsage" : 40,
-    "inaccuracy" : 0.08,
+    "inaccuracy" : 0.01, //0.08
 	
 	"primaryFiringOffset" : [1.6, 0.8],
 	"secondaryFiringOffset" : [1.6, 0.3],
@@ -70,7 +70,8 @@
     "projectileParameters" : {
 	  "searchRadius" : 30,
 	  "baseHomingControlForce" : 1.0,
-	  "timeToLive" : 3.0
+	  "timeToLive" : 5.0, //3.0
+	  "speed" : 70
 	},
     "stances" : {
       "idle" : {
@@ -111,15 +112,15 @@
 
     "fireTime" : 0.2,
     "baseDps" : 9.0,
-    "energyUsage" : 20,
+    "energyUsage" : 30, //20
     "inaccuracy" : 0.12,
 	
 	"primaryFiringOffset" : [1.6, 0.8],
 	"secondaryFiringOffset" : [1.6, 0.3],
 
-    "projectileCount" : 1,
-    "burstTime" : 0.08,
-    "burstCount" : 18,
+    "projectileCount" : 2, //1
+    "burstTime" : 0.06, //0.08
+    "burstCount" : 10, //18
     "fireType" : "burst",
 
     "projectileType" : "avikanswarmmissile",

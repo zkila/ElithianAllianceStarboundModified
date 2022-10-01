@@ -4,13 +4,13 @@
   "bounces" : -1,
   "image" : "skoffwreckertrail.png",
   "animationCycle" : 1.0,
-  "timeToLive" : 2.0,
+  "timeToLive" : 2.0, //2.0
   "frameNumber" : 1,
   "power" : 1,
   "speed" : 0,
   "piercing" : true,
   "supportsProcessing" : true,
-  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damagePoly" : [ [-19, 0], [-10, -6], [0, -9], [10, -6], [19, 0], [10, 6], [0, 9], [-10, 6] ],
   "emitters" : [ "skoffwreckertrail" ],
   "actionOnReap" : [ ],
   "statusEffects" : [

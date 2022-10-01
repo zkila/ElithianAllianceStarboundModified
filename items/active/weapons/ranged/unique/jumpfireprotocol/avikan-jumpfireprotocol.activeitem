@@ -88,8 +88,8 @@
     "class" : "TheaSpeedUpMinigun",
 
     "minFiringSpeed" : 0.4, //Starting fire time
-	"maxFiringSpeed" : 0.1, //End fire time
-	"maxFiringTime" : 3.5, //How long it takes to reach maximum firing speed
+	"maxFiringSpeed" : 0.05, //0.1...End fire time
+	"maxFiringTime" : 7.0, //3.5...How long it takes to reach maximum firing speed
 	
     "baseDps" : 5.0, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
     "energyUsage" : 15.0,
@@ -161,17 +161,17 @@
     "chargeTime" : 1.3,
     "baseDamage" : 15.0,
     "baseEnergyUsage" : 75,
-    "inaccuracy" : 0.005,
+    "inaccuracy" : 0.1,//0.005
 	
 	"cooldownTime" : 0.8,
 	
 	"fireType" : "burst",
-	"burstCount" : 8,
+	"burstCount" : 4, //8
 	"burstTime" : 0.1,
-	"burstRiseAngle" : 0.025,
+	"burstRiseAngle" : 0.02, //0.025
 
     "projectileType" : "smalljumpriflebullet-fire",
-	"projectileCount" : 1,
+	"projectileCount" : 3,
 	"projectileParameters" : { 
       "knockback" : 6,
 	  "speed" : 75

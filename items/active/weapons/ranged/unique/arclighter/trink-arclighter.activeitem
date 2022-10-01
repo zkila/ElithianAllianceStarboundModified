@@ -112,7 +112,7 @@
     "class" : "TheaActiveLightningFire",
 
     "fireTime" : 0.2,
-    "baseDps" : 14.5,
+    "baseDps" : 20.5, //14.5
     "energyUsage" : 60.0,
 
     "damageConfig" : {

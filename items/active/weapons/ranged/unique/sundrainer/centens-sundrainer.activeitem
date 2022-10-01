@@ -98,11 +98,11 @@
 	"walkWhileFiring" : true,
 	
 	"cooldownTime" : 1.1,
-
-    "projectileType" : "largejumpriflebullet",
+    
+	"projectileType" : "largejumpriflebulletspawner",
 	"projectileCount" : 1,
 	"projectileParameters" : {
-      "knockback" : 20
+    //  "knockback" : 20
     },
 	
 	//CHARGE PARTICLE CONFIGURATION
@@ -181,7 +181,7 @@
 	
 	"walkWhileFiring" : true,
 	"minFiringTime" : 2.5,
-	"maxFiringTime" : 2.5,
+	"maxFiringTime" : 10.0, //2.5
 	
 	"impactDamageTimeout" : 0.1,
 	"spawnImpactProjectile" : true,
@@ -193,15 +193,15 @@
     "damageConfig" : {
       "statusEffects" : [ "jumprifleburn" ],
       "damageSourceKind" : "jumpweapon",
-      "knockback" : 2
+      "knockback" : 5 //2
     },
 	
 	//CHARGE PARTICLE CONFIGURATION
 	"useChargeParticles" : true,
-	"maxChargeParticles" : 24,
+	"maxChargeParticles" : 36, //24
 	"particleLifetime" : 1.0,
 	"timeBewteenParticles" : 0.05,
-	"maxParticleDistance" : 3.5,
+	"maxParticleDistance" : 4.5,
 	
 	"recoilKnockbackVelocity" : 100,
 	"crouchRecoilKnockbackVelocity" : 80,
@@ -218,8 +218,8 @@
       "overdrawLength" : 0.125,
       "taper" : 0,
       "waveform" : {
-        "frequency" : 20.0,
-        "amplitude" : 0.1,
+        "frequency" : 40.0, //20.0
+        "amplitude" : 0.2, //0.1
         "movement" : 200.0
       },
       "fullbright" : true,

@@ -247,13 +247,13 @@
         "allowFlip" : true,
 		
 		//Recoil
-		"directionalVelocity" : -20,
+		"directionalVelocity" : -40, //-20
 		"anywhere" : true,
 		"jump" : true,
 		
 		//Projectile
 		"projectile" : "wrathofrhadeisexplosion",
-		"projectileDamage" : 10,
+		"projectileDamage" : 30, //10
 		"projectileParameters" : {
 		  "statusEffects" : [ "shadowmarked-healinglarge" ],
 		  "knockback" : 30

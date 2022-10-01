@@ -114,7 +114,9 @@
     "projectileType" : "errasslayersbullet",
 	"projectileCount" : 1,
 	"projectileParameters" : {
-      "knockback" : 10
+      "knockback" : 10,
+	  "searchRadius" : 75,
+	  "baseHomingControlForce" : 1.75
     },
 
     "stances" : {
@@ -204,7 +206,8 @@
     "projectileType" : "errasslayersbulletbouncer",
 	"projectileCount" : 1,
 	"projectileParameters" : {
-      "knockback" : 10
+      "knockback" : 10,
+	  "bounces" : -1
     },
 
     "stances" : {

@@ -53,7 +53,9 @@
   "altAbility" : {
     "name" : "Shadow Cloak",
 	"statusEffect" : "thea-shadowcloak",
-	"statusEffectDuration" : 6,
+	"statusEffectDuration" : 15, //6
+	"cooldownPersistent" : true, //true
+	"cooldownTime" : 15.0, //15.0
 	
 	"blockingStat" : "theaShadowCloakImmunity",
 	
